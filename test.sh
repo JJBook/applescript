@@ -69,7 +69,14 @@
 
 # EOT
 
-
+osascript << EOT
+	# tell application "Calendar"
+	# 	tell calendar "calendar-name"
+	# 		set theCurrentDate to current date
+	# 		make new event at end with properties {description:"Event Decription", summary:"Event Name", location:"Event Location", start date:theCurrentDate + 1 * minutes, end date:theCurrentDate + 2 * minutes, url:"https://bing.com"}
+	# 	end tell
+	# end tell
+EOT
 
 
 
